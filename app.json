@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Bookypedia",
+    "slug": "bookypedia",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/images/splashImg.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#074177"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "description": "App that lets You search books, bookmark them, read details, description and more."
+  }
+}
