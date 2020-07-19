@@ -13,7 +13,7 @@ export default function BookDetails({ route, navigation }) {
 
   getUser = async () => {
     try {
-    let uri = `https://bookypedia77.herokuapp.com/users/me`;
+    let uri = `localhost:5000/users/me`;
     const token = await AsyncStorage.getItem('userToken');
     let config = {
       headers: {
@@ -42,7 +42,7 @@ export default function BookDetails({ route, navigation }) {
     else {
     axios.request({
       method: 'put',
-      url: `https://bookypedia77.herokuapp.com/users/markedbook/${user.email}`, 
+      url: `localhost:5000//users/markedbook/${user.email}`, 
       data
     }).then(async(response)=> {
           Alert.alert('Bookmarked!');
@@ -60,7 +60,7 @@ _rateBook = (rating) => {
   try {
      axios.request({
        method: 'put',
-       url: `https://bookypedia77.herokuapp.com/users/rate/${user.email}`,
+       url: `localhost:5000//users/rate/${user.email}`,
      }).then((response)=> {
            Alert.alert('Thank You for rating this book!');
            
